@@ -27,6 +27,10 @@ window/size/resizable=false
 stretch/aspect="keep"
 stretch/mode="2d"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "TileSetCutter" )
+
 [gdnative]
 
 singletons=[  ]
