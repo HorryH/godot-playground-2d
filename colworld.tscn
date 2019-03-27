@@ -13,13 +13,13 @@
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=3]
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=4]
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=5]
 
-[sub_resource type="TileSet" id=3]
+[sub_resource type="TileSet" id=6]
 0/name = ""
 0/texture = ExtResource( 2 )
 0/tex_offset = Vector2( 0, 0 )
@@ -41,23 +41,14 @@ extents = Vector2( 8, 8 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 16, 16 )
-1/tile_mode = 1
-1/autotile/bitmask_mode = 0
-1/autotile/bitmask_flags = [  ]
-1/autotile/icon_coordinate = Vector2( 0, 0 )
-1/autotile/tile_size = Vector2( 16, 16 )
-1/autotile/spacing = 0
-1/autotile/occluder_map = [  ]
-1/autotile/navpoly_map = [  ]
-1/autotile/priority_map = [  ]
-1/autotile/z_index_map = [  ]
+1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 1/z_index = 0
@@ -82,7 +73,7 @@ extents = Vector2( 8, 8 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 17 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 2/z_index = 0
@@ -103,13 +94,7 @@ extents = Vector2( 8, 8 )
 3/autotile/z_index_map = [  ]
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
-3/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+3/shapes = [  ]
 3/z_index = 0
 4/name = "sprites.png 4"
 4/texture = ExtResource( 3 )
@@ -128,13 +113,7 @@ extents = Vector2( 8, 8 )
 4/autotile/z_index_map = [  ]
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
-4/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+4/shapes = [  ]
 4/z_index = 0
 5/name = "sprites.png 5"
 5/texture = ExtResource( 3 )
@@ -153,13 +132,7 @@ extents = Vector2( 8, 8 )
 5/autotile/z_index_map = [  ]
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
-5/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+5/shapes = [  ]
 5/z_index = 0
 6/name = "sprites.png 6"
 6/texture = ExtResource( 3 )
@@ -178,13 +151,7 @@ extents = Vector2( 8, 8 )
 6/autotile/z_index_map = [  ]
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
-6/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+6/shapes = [  ]
 6/z_index = 0
 7/name = "sprites.png 7"
 7/texture = ExtResource( 3 )
@@ -207,7 +174,7 @@ extents = Vector2( 8, 8 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 16 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 7/z_index = 0
@@ -228,13 +195,7 @@ extents = Vector2( 8, 8 )
 8/autotile/z_index_map = [  ]
 8/occluder_offset = Vector2( 0, 0 )
 8/navigation_offset = Vector2( 0, 0 )
-8/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+8/shapes = [  ]
 8/z_index = 0
 9/name = "sprites.png 9"
 9/texture = ExtResource( 3 )
@@ -253,19 +214,13 @@ extents = Vector2( 8, 8 )
 9/autotile/z_index_map = [  ]
 9/occluder_offset = Vector2( 0, 0 )
 9/navigation_offset = Vector2( 0, 0 )
-9/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": null,
-"shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
-} ]
+9/shapes = [  ]
 9/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=8]
 length = 10.0
 loop = true
 tracks/0/type = "value"
@@ -281,7 +236,7 @@ tracks/0/keys = {
 "values": [ Vector2( 184, 152 ), Vector2( 184, 152 ), Vector2( 328.086, 152 ), Vector2( 328.086, 152 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=9]
 length = 10.0
 loop = true
 tracks/0/type = "value"
@@ -297,7 +252,7 @@ tracks/0/keys = {
 "values": [ Vector2( 184, 152 ), Vector2( 184, 152 ), Vector2( 328.086, 152 ), Vector2( 328.086, 152 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=10]
 length = 10.0
 loop = true
 tracks/0/type = "value"
@@ -313,16 +268,16 @@ tracks/0/keys = {
 "values": [ Vector2( 88.3493, 296 ), Vector2( 88.3493, 296 ), Vector2( 88.3493, 152 ), Vector2( 88.3493, 152 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 10, 4 )
 
-[sub_resource type="CircleShape2D" id=10]
+[sub_resource type="CircleShape2D" id=13]
 radius = 32.0
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=14]
 length = 20.0
 loop = true
 tracks/0/type = "value"
@@ -338,13 +293,13 @@ tracks/0/keys = {
 "values": [ 0.0, 90.0, 0.0, -90.0 ]
 }
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 32, 8 )
 
-[sub_resource type="RectangleShape2D" id=14]
+[sub_resource type="RectangleShape2D" id=17]
 
 [node name="Node2D" type="Node2D"]
 
@@ -363,10 +318,10 @@ render_target_update_mode = 0
 script = ExtResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="colworld"]
-tile_set = SubResource( 3 )
+tile_set = SubResource( 6 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 0, 7, 0, 1, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 10, 7, 0, 11, 7, 0, 12, 7, 0, 13, 7, 0, 14, 7, 0, 15, 7, 0, 16, 7, 0, 17, 7, 0, 19, 7, 0, 20, 7, 0, 21, 7, 0, 22, 7, 0, 23, 7, 0, 24, 7, 0, 25, 7, 0, 26, 7, 0, 27, 7, 0, 28, 7, 0, 29, 7, 0, 30, 7, 0, 31, 7, 0, 32, 7, 0, 65536, 7, 0, 65537, 7, 0, 65539, 7, 0, 65540, 7, 0, 65541, 7, 0, 65542, 7, 0, 65543, 7, 0, 65544, 7, 0, 65545, 7, 0, 65546, 7, 0, 65547, 7, 0, 65548, 7, 0, 65549, 7, 0, 65550, 7, 0, 65551, 7, 0, 65552, 7, 0, 65553, 7, 0, 65555, 7, 0, 65556, 7, 0, 65557, 7, 0, 65558, 7, 0, 65559, 7, 0, 65560, 7, 0, 65561, 7, 0, 65562, 7, 0, 65563, 7, 0, 65564, 7, 0, 65565, 7, 0, 65566, 7, 0, 65567, 7, 0, 65568, 7, 0, 131072, 7, 0, 131073, 7, 0, 131103, 7, 0, 131104, 7, 0, 196608, 7, 0, 196609, 7, 0, 196639, 7, 0, 196640, 7, 0, 262144, 7, 0, 262145, 7, 0, 262175, 7, 0, 262176, 7, 0, 327680, 7, 0, 327681, 7, 0, 327685, 2, 0, 327686, 2, 0, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 327692, 2, 0, 327693, 2, 0, 327697, 2, 0, 327711, 7, 0, 327712, 7, 0, 393216, 7, 0, 393217, 7, 0, 393237, 2, 0, 393238, 2, 0, 393247, 7, 0, 393248, 7, 0, 458752, 7, 0, 458753, 7, 0, 458783, 7, 0, 458784, 7, 0, 524288, 7, 0, 524289, 7, 0, 524313, 2, 0, 524314, 2, 0, 524319, 7, 0, 524320, 7, 0, 589824, 7, 0, 589825, 7, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589845, 2, 0, 589846, 2, 0, 589847, 2, 0, 589855, 7, 0, 589856, 7, 0, 655360, 7, 0, 655361, 7, 0, 655391, 7, 0, 655392, 7, 0, 720896, 7, 0, 720897, 7, 0, 720927, 7, 0, 720928, 7, 0, 786432, 7, 0, 786433, 7, 0, 786463, 7, 0, 786464, 7, 0, 851968, 7, 0, 851969, 7, 0, 851999, 7, 0, 852000, 7, 0, 917504, 7, 0, 917505, 7, 0, 917535, 7, 0, 917536, 7, 0, 1114112, 7, 0, 1114113, 7, 0, 1114143, 7, 0, 1114144, 7, 0, 1179648, 7, 0, 1179649, 7, 0, 1179654, 2, 0, 1179655, 2, 0, 1179656, 2, 0, 1179679, 7, 0, 1179680, 7, 0, 1245184, 7, 0, 1245185, 7, 0, 1245204, 2, 0, 1245205, 2, 0, 1245206, 2, 0, 1245207, 2, 0, 1245215, 7, 0, 1245216, 7, 0, 1310720, 7, 0, 1310721, 7, 0, 1310751, 7, 0, 1310752, 7, 0, 1376256, 7, 0, 1376257, 7, 0, 1376285, 2, 0, 1376286, 2, 0, 1376287, 7, 0, 1376288, 7, 0, 1441792, 7, 0, 1441793, 7, 0, 1441823, 7, 0, 1441824, 7, 0, 1507328, 7, 0, 1507329, 7, 0, 1507355, 2, 0, 1507356, 2, 0, 1507359, 7, 0, 1507360, 7, 0, 1572864, 7, 0, 1572865, 7, 0, 1572895, 7, 0, 1572896, 7, 0, 1638400, 7, 0, 1638401, 7, 0, 1638413, 2, 0, 1638425, 2, 0, 1638426, 2, 0, 1638431, 7, 0, 1638432, 7, 0, 1703936, 7, 0, 1703937, 7, 0, 1703948, 2, 0, 1703965, 2, 0, 1703966, 2, 0, 1703967, 7, 0, 1703968, 7, 0, 1769472, 7, 0, 1769473, 7, 0, 1769482, 2, 0, 1769483, 2, 0, 1769500, 2, 0, 1769501, 0, 0, 1769503, 7, 0, 1769504, 7, 0, 1835008, 7, 0, 1835009, 7, 0, 1835012, 2, 0, 1835018, 7, 0, 1835019, 7, 0, 1835034, 2, 0, 1835035, 2, 0, 1835039, 7, 0, 1835040, 7, 0, 1900544, 7, 0, 1900545, 7, 0, 1900547, 2, 0, 1900548, 2, 0, 1900549, 2, 0, 1900550, 2, 0, 1900551, 2, 0, 1900552, 2, 0, 1900553, 2, 0, 1900554, 7, 0, 1900555, 7, 0, 1900556, 2, 0, 1900557, 2, 0, 1900558, 2, 0, 1900559, 2, 0, 1900560, 2, 0, 1900561, 2, 0, 1900563, 2, 0, 1900564, 2, 0, 1900565, 2, 0, 1900566, 2, 0, 1900567, 2, 0, 1900568, 2, 0, 1900569, 2, 0, 1900570, 7, 0, 1900571, 7, 0, 1900572, 2, 0, 1900573, 2, 0, 1900574, 2, 0, 1900575, 7, 0, 1900576, 7, 0, 1966080, 7, 0, 1966081, 7, 0, 1966083, 7, 0, 1966084, 7, 0, 1966085, 7, 0, 1966086, 7, 0, 1966087, 7, 0, 1966088, 7, 0, 1966089, 7, 0, 1966090, 7, 0, 1966091, 7, 0, 1966092, 7, 0, 1966093, 7, 0, 1966094, 7, 0, 1966095, 7, 0, 1966096, 7, 0, 1966097, 7, 0, 1966099, 7, 0, 1966100, 7, 0, 1966101, 7, 0, 1966102, 7, 0, 1966103, 7, 0, 1966104, 7, 0, 1966105, 7, 0, 1966106, 7, 0, 1966107, 7, 0, 1966108, 7, 0, 1966109, 7, 0, 1966110, 7, 0, 1966111, 7, 0, 1966112, 7, 0, 2031616, 7, 0, 2031617, 7, 0, 2031619, 7, 0, 2031620, 7, 0, 2031621, 7, 0, 2031622, 7, 0, 2031623, 7, 0, 2031624, 7, 0, 2031625, 7, 0, 2031626, 7, 0, 2031627, 7, 0, 2031628, 7, 0, 2031629, 7, 0, 2031630, 7, 0, 2031631, 7, 0, 2031632, 7, 0, 2031633, 7, 0, 2031635, 7, 0, 2031636, 7, 0, 2031637, 7, 0, 2031638, 7, 0, 2031639, 7, 0, 2031640, 7, 0, 2031641, 7, 0, 2031642, 7, 0, 2031643, 7, 0, 2031644, 7, 0, 2031645, 7, 0, 2031646, 7, 0, 2031647, 7, 0, 2031648, 7, 0 )
+tile_data = PoolIntArray( 0, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 10, 7, 0, 11, 7, 0, 12, 7, 0, 13, 7, 0, 14, 7, 0, 15, 7, 0, 16, 7, 0, 17, 7, 0, 18, 7, 0, 19, 7, 0, 20, 7, 0, 21, 7, 0, 22, 7, 0, 23, 7, 0, 24, 7, 0, 25, 7, 0, 26, 7, 0, 27, 7, 0, 28, 7, 0, 29, 7, 0, 32, 7, 0, 65536, 7, 0, 65568, 7, 0, 131072, 7, 0, 131104, 7, 0, 196608, 7, 0, 196640, 7, 0, 262144, 7, 0, 262176, 7, 0, 327680, 7, 0, 327685, 2, 0, 327686, 2, 0, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 327692, 2, 0, 327693, 2, 0, 327697, 2, 0, 327712, 7, 0, 393216, 7, 0, 393222, 7, 0, 393223, 7, 0, 393224, 7, 0, 393225, 7, 0, 393226, 7, 0, 393227, 7, 0, 393228, 7, 0, 393237, 2, 0, 393238, 2, 0, 393245, 2, 0, 393246, 2, 0, 393247, 2, 0, 393248, 7, 0, 458752, 7, 0, 458782, 7, 0, 458783, 7, 0, 458784, 7, 0, 524288, 7, 0, 524313, 2, 0, 524314, 2, 0, 524319, 7, 0, 524320, 7, 0, 589824, 7, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589845, 2, 0, 589846, 2, 0, 589847, 2, 0, 589856, 7, 0, 655360, 7, 0, 655361, 7, 0, 655362, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655392, 7, 0, 720896, 7, 0, 720897, 7, 0, 720928, 7, 0, 786432, 7, 0, 786464, 7, 0, 851968, 7, 0, 852000, 7, 0, 917504, 7, 0, 917536, 7, 0, 1114112, 2, 0, 1114113, 2, 0, 1114114, 2, 0, 1114142, 2, 0, 1114143, 2, 0, 1114144, 2, 0, 1179648, 7, 0, 1179654, 2, 0, 1179655, 2, 0, 1179656, 2, 0, 1179680, 7, 0, 1245184, 7, 0, 1245191, 7, 0, 1245204, 2, 0, 1245205, 2, 0, 1245206, 2, 0, 1245207, 2, 0, 1245216, 7, 0, 1310720, 7, 0, 1310741, 7, 0, 1310742, 7, 0, 1310752, 7, 0, 1376256, 7, 0, 1376285, 2, 0, 1376286, 2, 0, 1376288, 7, 0, 1441792, 7, 0, 1441824, 7, 0, 1507328, 7, 0, 1507355, 2, 0, 1507356, 2, 0, 1507360, 7, 0, 1572864, 7, 0, 1572896, 7, 0, 1638400, 7, 0, 1638413, 2, 0, 1638425, 2, 0, 1638426, 2, 0, 1638432, 7, 0, 1703936, 7, 0, 1703948, 2, 0, 1703965, 2, 0, 1703966, 2, 0, 1703968, 7, 0, 1769472, 7, 0, 1769482, 2, 0, 1769483, 2, 0, 1769500, 2, 0, 1769501, 0, 0, 1769504, 7, 0, 1835008, 7, 0, 1835012, 2, 0, 1835018, 7, 0, 1835019, 7, 0, 1835034, 2, 0, 1835035, 2, 0, 1835040, 7, 0, 1900544, 7, 0, 1900547, 2, 0, 1900548, 2, 0, 1900549, 2, 0, 1900550, 2, 0, 1900551, 2, 0, 1900552, 2, 0, 1900553, 2, 0, 1900554, 7, 0, 1900555, 7, 0, 1900556, 2, 0, 1900557, 2, 0, 1900558, 2, 0, 1900559, 2, 0, 1900560, 2, 0, 1900561, 2, 0, 1900563, 2, 0, 1900564, 2, 0, 1900565, 2, 0, 1900566, 2, 0, 1900567, 2, 0, 1900568, 2, 0, 1900569, 2, 0, 1900570, 7, 0, 1900571, 7, 0, 1900572, 2, 0, 1900573, 2, 0, 1900576, 7, 0, 1966080, 7, 0, 1966083, 7, 0, 1966084, 7, 0, 1966085, 7, 0, 1966086, 7, 0, 1966087, 7, 0, 1966088, 7, 0, 1966089, 7, 0, 1966090, 7, 0, 1966091, 7, 0, 1966092, 7, 0, 1966093, 7, 0, 1966094, 7, 0, 1966095, 7, 0, 1966096, 7, 0, 1966097, 7, 0, 1966099, 7, 0, 1966100, 7, 0, 1966101, 7, 0, 1966102, 7, 0, 1966103, 7, 0, 1966104, 7, 0, 1966105, 7, 0, 1966106, 7, 0, 1966107, 7, 0, 1966108, 7, 0, 1966109, 7, 0, 1966112, 7, 0 )
 
 [node name="player" parent="colworld" instance=ExtResource( 4 )]
 position = Vector2( 233.06, 223.436 )
@@ -375,7 +330,7 @@ position = Vector2( 233.06, 223.436 )
 position = Vector2( 274.142, 152 )
 
 [node name="collision" type="CollisionShape2D" parent="colworld/moving_platform1"]
-shape = SubResource( 4 )
+shape = SubResource( 7 )
 
 [node name="sprite" type="Sprite" parent="colworld/moving_platform1"]
 texture = ExtResource( 2 )
@@ -383,13 +338,13 @@ texture = ExtResource( 2 )
 [node name="anim" type="AnimationPlayer" parent="colworld/moving_platform1"]
 autoplay = "leftright"
 playback_process_mode = 0
-anims/leftright = SubResource( 5 )
+anims/leftright = SubResource( 8 )
 
 [node name="moving_platform2" type="KinematicBody2D" parent="colworld"]
 position = Vector2( 88.3493, 284.689 )
 
 [node name="collision" type="CollisionShape2D" parent="colworld/moving_platform2"]
-shape = SubResource( 4 )
+shape = SubResource( 7 )
 
 [node name="sprite" type="Sprite" parent="colworld/moving_platform2"]
 texture = ExtResource( 2 )
@@ -397,14 +352,14 @@ texture = ExtResource( 2 )
 [node name="anim" type="AnimationPlayer" parent="colworld/moving_platform2"]
 autoplay = "updown"
 playback_process_mode = 0
-anims/leftright = SubResource( 6 )
-anims/updown = SubResource( 7 )
+anims/leftright = SubResource( 9 )
+anims/updown = SubResource( 10 )
 
 [node name="princess" type="Area2D" parent="colworld"]
 position = Vector2( 97, 72 )
 
 [node name="collision" type="CollisionShape2D" parent="colworld/princess"]
-shape = SubResource( 8 )
+shape = SubResource( 11 )
 
 [node name="Sprite" type="Sprite" parent="colworld/princess"]
 texture = ExtResource( 5 )
@@ -429,7 +384,7 @@ scale = Vector2( 1, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/oneway1"]
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 one_way_collision = true
 
 [node name="oneway2" type="KinematicBody2D" parent="colworld"]
@@ -440,7 +395,7 @@ scale = Vector2( 1, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/oneway2"]
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 one_way_collision = true
 
 [node name="oneway3" type="KinematicBody2D" parent="colworld"]
@@ -451,7 +406,7 @@ scale = Vector2( 1, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/oneway3"]
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 one_way_collision = true
 
 [node name="oneway4" type="KinematicBody2D" parent="colworld"]
@@ -462,7 +417,7 @@ scale = Vector2( 1, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/oneway4"]
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 one_way_collision = true
 
 [node name="circle" type="KinematicBody2D" parent="colworld"]
@@ -472,15 +427,15 @@ position = Vector2( 241.169, 304.126 )
 texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/circle"]
-shape = SubResource( 10 )
+shape = SubResource( 13 )
 
 [node name="anim" type="AnimationPlayer" parent="colworld/circle"]
 autoplay = "turn"
-anims/turn = SubResource( 11 )
+anims/turn = SubResource( 14 )
 
 [node name="box" type="CollisionShape2D" parent="colworld/circle"]
 position = Vector2( -0.440125, -37.0904 )
-shape = SubResource( 12 )
+shape = SubResource( 15 )
 
 [node name="boxsprite" type="Sprite" parent="colworld/circle"]
 position = Vector2( 0, -37.4108 )
@@ -494,7 +449,7 @@ rotation = -0.428054
 texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform"]
-shape = SubResource( 13 )
+shape = SubResource( 16 )
 
 [node name="platform1" type="StaticBody2D" parent="colworld"]
 position = Vector2( 369.116, 394.016 )
@@ -504,7 +459,7 @@ rotation = 0.465931
 texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform1"]
-shape = SubResource( 13 )
+shape = SubResource( 16 )
 
 [node name="view_area" type="Area2D" parent="."]
 visible = false
@@ -512,7 +467,7 @@ position = Vector2( 264, 249 )
 scale = Vector2( 26.2011, -24.8957 )
 
 [node name="collision" type="CollisionShape2D" parent="view_area"]
-shape = SubResource( 14 )
+shape = SubResource( 17 )
 
 [connection signal="body_entered" from="colworld/princess" to="colworld" method="_on_princess_body_enter"]
 [connection signal="body_exited" from="view_area" to="colworld" method="_on_view_area_body_exited"]
