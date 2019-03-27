@@ -78,15 +78,3 @@ func _physics_process(delta):
 	
 	on_air_time += delta
 	prev_jump_pressed = jump
-
-
-func _on_VisibilityNotifier2D_viewport_exited(viewport):
-	if position.x < 0:
-		set_position(Vector2(viewport.size.x, position.y))
-	elif position.x > viewport.size.x:
-		set_position(Vector2(0, position.y))
-	elif position.y > viewport.size.y:
-		set_position(Vector2(position.x, 0))
-
-func _on_Area2D_body_exited(body):
-	print("here")
