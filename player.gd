@@ -24,7 +24,7 @@ var jumping = false
 var last_press_delta = 0
 
 var prev_jump_pressed = false
-
+onready var animation = $AnimatedSprite
 
 func _physics_process(delta):
 	# Create forces
@@ -38,15 +38,23 @@ func _physics_process(delta):
 	var stop = true
 	
 	if walk_left:
+		animation.set_animation('walk')
+		animation.flip_h = true
+		
 		if velocity.x <= WALK_MIN_SPEED and velocity.x > -WALK_MAX_SPEED:
 			force.x -= WALK_FORCE
 			stop = false
 	elif walk_right:
+		animation.set_animation('walk')
+		animation.flip_h = false
 		if velocity.x >= -WALK_MIN_SPEED and velocity.x < WALK_MAX_SPEED:
 			force.x += WALK_FORCE
 			stop = false
-	if fast_fall:
+	elif fast_fall:
+		animation.set_animation('fall')
 		velocity.y = 100
+	else:
+		animation.set_animation('idle')
 	
 	if stop:
 		var vsign = sign(velocity.x)
@@ -76,5 +84,8 @@ func _physics_process(delta):
 		velocity.y = -JUMP_SPEED
 		jumping = true
 	
+	if jumping:
+		animation.set_animation('jump')
+		
 	on_air_time += delta
 	prev_jump_pressed = jump
