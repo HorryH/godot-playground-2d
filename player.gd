@@ -25,6 +25,7 @@ var last_press_delta = 0
 
 var prev_jump_pressed = false
 onready var animation = $AnimatedSprite
+var bomb = null
 
 func _physics_process(delta):
 	# Create forces
@@ -34,6 +35,7 @@ func _physics_process(delta):
 	var walk_right = Input.is_action_pressed("move_right")
 	var fast_fall = Input.is_action_just_pressed("move_bottom")
 	var jump = Input.is_action_pressed("jump")
+	var bomb_pressed = Input.is_action_pressed("bomb")
 	
 	var stop = true
 	
@@ -89,3 +91,7 @@ func _physics_process(delta):
 		
 	on_air_time += delta
 	prev_jump_pressed = jump
+	
+	if bomb_pressed:
+		print("bomb")
+		bomb.instance()

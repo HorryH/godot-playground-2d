@@ -4,10 +4,10 @@
 [ext_resource path="res://obstacle.png" type="Texture" id=2]
 [ext_resource path="res://sprites.png" type="Texture" id=3]
 [ext_resource path="res://player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://bomb.png" type="Texture" id=5]
-[ext_resource path="res://princess.png" type="Texture" id=6]
-[ext_resource path="res://circle.png" type="Texture" id=7]
-[ext_resource path="res://long_obstacle.png" type="Texture" id=8]
+[ext_resource path="res://princess.png" type="Texture" id=5]
+[ext_resource path="res://circle.png" type="Texture" id=6]
+[ext_resource path="res://long_obstacle.png" type="Texture" id=7]
+[ext_resource path="res://bomb.tscn" type="PackedScene" id=8]
 
 [sub_resource type="World" id=1]
 
@@ -354,7 +354,7 @@ position = Vector2( 274.142, 152 )
 shape = SubResource( 8 )
 
 [node name="sprite" type="Sprite" parent="colworld/moving_platform1"]
-texture = ExtResource( 5 )
+texture = ExtResource( 2 )
 
 [node name="anim" type="AnimationPlayer" parent="colworld/moving_platform1"]
 autoplay = "leftright"
@@ -383,7 +383,7 @@ position = Vector2( 97, 72 )
 shape = SubResource( 12 )
 
 [node name="Sprite" type="Sprite" parent="colworld/princess"]
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 
 [node name="youwin" type="Label" parent="colworld"]
 visible = false
@@ -445,7 +445,7 @@ one_way_collision = true
 position = Vector2( 241.169, 304.126 )
 
 [node name="sprite" type="Sprite" parent="colworld/circle"]
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/circle"]
 shape = SubResource( 14 )
@@ -467,7 +467,7 @@ position = Vector2( 251.44, 396.557 )
 rotation = -0.428054
 
 [node name="sprite" type="Sprite" parent="colworld/platform"]
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform"]
 shape = SubResource( 17 )
@@ -477,7 +477,7 @@ position = Vector2( 369.116, 394.016 )
 rotation = 0.465931
 
 [node name="sprite" type="Sprite" parent="colworld/platform1"]
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform1"]
 shape = SubResource( 17 )
@@ -489,6 +489,9 @@ scale = Vector2( 26.2011, -24.8957 )
 
 [node name="collision" type="CollisionShape2D" parent="view_area"]
 shape = SubResource( 18 )
+
+[node name="bomb" parent="." instance=ExtResource( 8 )]
+position = Vector2( 233.06, 223.436 )
 
 [connection signal="body_entered" from="colworld/princess" to="colworld" method="_on_princess_body_enter"]
 [connection signal="body_exited" from="view_area" to="colworld" method="_on_view_area_body_exited"]
