@@ -33,3 +33,5 @@ position = Vector2( -0.538467, 1.16668 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 2 )
 
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
