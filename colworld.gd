@@ -12,6 +12,8 @@ func _physics_process(delta):
 		$player.set_position(Vector2(45, 80))
 
 func _on_view_area_body_exited(body):
+	print(body)
+	print(body.position)
 	var viewport = get_viewport()
 	if body.position.x < 0:
 		body.set_position(Vector2(viewport.size.x, body.position.y))
