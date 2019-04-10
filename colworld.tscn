@@ -4,11 +4,11 @@
 [ext_resource path="res://obstacle.png" type="Texture" id=2]
 [ext_resource path="res://sprites.png" type="Texture" id=3]
 [ext_resource path="res://player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://bomb.tscn" type="PackedScene" id=5]
-[ext_resource path="res://bomb.gd" type="Script" id=6]
-[ext_resource path="res://princess.png" type="Texture" id=7]
-[ext_resource path="res://circle.png" type="Texture" id=8]
-[ext_resource path="res://long_obstacle.png" type="Texture" id=9]
+[ext_resource path="res://princess.png" type="Texture" id=5]
+[ext_resource path="res://circle.png" type="Texture" id=6]
+[ext_resource path="res://long_obstacle.png" type="Texture" id=7]
+[ext_resource path="res://bomb.tscn" type="PackedScene" id=8]
+[ext_resource path="res://bomb.gd" type="Script" id=9]
 
 [sub_resource type="World" id=1]
 
@@ -346,11 +346,7 @@ tile_data = PoolIntArray( 0, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 
 script = SubResource( 7 )
 
 [node name="player" parent="colworld" instance=ExtResource( 4 )]
-editor/display_folded = false
 position = Vector2( 233.06, 223.436 )
-
-[node name="bomb" parent="colworld/player" instance=ExtResource( 5 )]
-script = ExtResource( 6 )
 
 [node name="moving_platform1" type="KinematicBody2D" parent="colworld"]
 position = Vector2( 274.142, 152 )
@@ -388,7 +384,7 @@ position = Vector2( 97, 72 )
 shape = SubResource( 12 )
 
 [node name="Sprite" type="Sprite" parent="colworld/princess"]
-texture = ExtResource( 7 )
+texture = ExtResource( 5 )
 
 [node name="youwin" type="Label" parent="colworld"]
 visible = false
@@ -450,7 +446,7 @@ one_way_collision = true
 position = Vector2( 241.169, 304.126 )
 
 [node name="sprite" type="Sprite" parent="colworld/circle"]
-texture = ExtResource( 8 )
+texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/circle"]
 shape = SubResource( 14 )
@@ -472,7 +468,7 @@ position = Vector2( 251.44, 396.557 )
 rotation = -0.428054
 
 [node name="sprite" type="Sprite" parent="colworld/platform"]
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform"]
 shape = SubResource( 17 )
@@ -482,10 +478,15 @@ position = Vector2( 369.116, 394.016 )
 rotation = 0.465931
 
 [node name="sprite" type="Sprite" parent="colworld/platform1"]
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colworld/platform1"]
 shape = SubResource( 17 )
+
+[node name="bomb" parent="colworld" instance=ExtResource( 8 )]
+position = Vector2( 233.06, 223.436 )
+gravity_scale = 2.95
+script = ExtResource( 9 )
 
 [node name="view_area" type="Area2D" parent="."]
 visible = false
