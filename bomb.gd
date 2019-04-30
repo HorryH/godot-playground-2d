@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 var new_position = null
+onready var player = get_node("../../colworld/player")
 
 func set_position(position):
 	new_position = position
@@ -8,7 +9,7 @@ func set_position(position):
 func _physics_process(delta):
 	var bomb_pressed = Input.is_action_pressed("bomb")
 	if bomb_pressed:
-		set_position(Vector2(20, 300))
+		set_position(player.position)
 		
 func _integrate_forces(state):	
 	if new_position:
