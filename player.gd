@@ -25,6 +25,7 @@ var last_press_delta = 0
 
 var prev_jump_pressed = false
 onready var animation = $AnimatedSprite
+var face_right = true
 var bomb = null
 
 func _physics_process(delta):
@@ -39,6 +40,7 @@ func _physics_process(delta):
 	var stop = true
 	
 	if walk_left:
+		face_right = false
 		animation.set_animation('walk')
 		animation.flip_h = true
 		
@@ -46,6 +48,7 @@ func _physics_process(delta):
 			force.x -= WALK_FORCE
 			stop = false
 	elif walk_right:
+		face_right = true
 		animation.set_animation('walk')
 		animation.flip_h = false
 		if velocity.x >= -WALK_MIN_SPEED and velocity.x < WALK_MAX_SPEED:
@@ -91,3 +94,8 @@ func _physics_process(delta):
 	on_air_time += delta
 	prev_jump_pressed = jump
 	
+func facing():
+	return 1 if face_right else -1
+	
+func throw_impulse():
+	return Vector2(50 * facing(), -20)
